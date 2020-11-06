@@ -1,6 +1,8 @@
 package global
 
 import (
+	"github.com/jinzhu/gorm"
+	"github.com/lee820/ServerTemplate/pkg/logger"
 	"github.com/lee820/ServerTemplate/pkg/setting"
 )
 
@@ -10,4 +12,6 @@ var (
 	DatabaseSetting *setting.DatabaseSettingS
 	JWTSetting      *setting.JWTSettingS
 	EmailSetting    *setting.EmailSettingS
+	DBEngine        *gorm.DB
+	Logger          *logger.Logger
 )
